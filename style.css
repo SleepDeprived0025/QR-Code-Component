@@ -50,11 +50,12 @@ main{
 }
 
 .card > .header {
-	color: black !important;
-	font-weight: 700 !important;
-	font-size: 20px !important;
-	width: 100%;
+	color: black;
+	font-weight: 700;
+	font-size: 22px;
+	width: 95%;
 	margin: 10px;
+	text-align: center;
 }
 
 .card > p {
