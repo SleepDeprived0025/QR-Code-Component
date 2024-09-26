@@ -1,0 +1,100 @@
+:root {
+	--Slate-300: hsl(212, 45%, 89%);
+	--Slate-500: hsl(216, 15%, 48%);
+	--Slate-900: hsl(218, 44%, 22%);
+	--White: hsl(0, 0%, 100%);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Outfit", sans-serif;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+	height: 100vh;
+	width: 100vw;
+	background-color: var(--Slate-300);
+}
+
+.card {
+	width: 450px;
+	height: 550px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 5px;
+	background-color: var(--White);
+	border-radius: 10px;
+	box-shadow: 7px 7px 10px 1px #6f6f6f;
+}
+
+.card img {
+	width: 80%;
+	height: 80%;
+	border-radius: 10px;
+    margin-top: 5px;
+}
+
+.card > .header {
+	color: black !important;
+	font-weight: 700 !important;
+	font-size: 25px !important;
+	width: 70%;
+	margin: 10px;
+}
+
+.card > p {
+	font-weight: 400;
+	text-align: center;
+	color: var(--Slate-500);
+	font-size: 15px;
+	width: 65%;
+    margin-top: 10px;
+}
+.card > .attribution {
+	margin-top: 10px;
+	text-align: center;
+	width: 60%;
+}
+.card > .attribution > a {
+	text-decoration: none;
+}
+
+@media screen and (max-width: 375px) {
+	.card {
+		width: 85%;
+		height: fit-content;
+	}
+
+	.card img {
+		width: 95%;
+		height: 95%;
+        margin-top: 5px;
+	}
+
+	.card > .header {
+		font-size: 1.2rem !important;
+		width: 90%;
+	}
+
+	.card > p {
+		font-weight: 400;
+		font-size: 1rem !important;
+		width: 85%;
+	}
+	.card > .attribution {
+		margin-top: 10px;
+		text-align: center;
+		width: 80%;
+	}
+	.card > .attribution > a {
+		text-decoration: none;
+	}
+}
